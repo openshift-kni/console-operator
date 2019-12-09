@@ -110,6 +110,7 @@ func (b *ConsoleServerCLIConfigBuilder) ConfigYAML() (consoleConfigYAML []byte, 
 func (b *ConsoleServerCLIConfigBuilder) servingInfo() ServingInfo {
 	return ServingInfo{
 		BindAddress: "https://[::]:8443",
+		BindNetwork: "tcp",
 		CertFile:    certFilePath,
 		KeyFile:     keyFilePath,
 	}
